@@ -1,0 +1,86 @@
+.start{
+    background-image: url(../pics/cover/start.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*place-items: center;  توسيط أفقي وعمودي */
+    /*justify-content: center;  توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+}
+.pages{
+    width: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.page{
+    filter: grayscale(100%);
+    width: 20vw;
+    height: fit-content;
+    background-color: rgb(107, 75, 57);
+    border-radius: 30px;
+    border-color: rgb(67, 40, 24);
+    border-width: 10px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.page:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+.pagetitle{
+    text-align: center;
+    font-size: 30px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: auto;
+
+}
+.pagebio{
+    text-align: left;
+    font-size: 20px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.pagebioArabic{
+    text-align: right;
+    font-size: 20px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.pageimg{
+    width: 100%;
+    height: 80%;
+}

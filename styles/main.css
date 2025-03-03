@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(250,232,182);
+}
+.header{
+    background-color: rgb(47, 53, 30);
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+.boxLeft{
+    background-color:rgba(222, 184, 135, 0);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    direction: ltr;
+    align-items: center;
+}
+.boxMiddle{
+    background-color:rgba(222, 184, 135, 0);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    direction: ltr;
+    justify-content: center;
+    align-items: center; 
+}
+.boxRight{
+    background-color:rgba(222, 184, 135, 0);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+.pageButton{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(240, 248, 255, 0);
+    border-bottom-color: black;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease-in-out;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 150px;
+    font-size: 20px;
+}
+.pageButton:hover{
+    background-color:rgb(94, 99, 75);
+    transform: scale(1.1);
+}
+.langButton{
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.langButton:hover{
+    transform: scale(1.1);
+}
+
+.menuButton{
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menuButton:hover{
+    transform: scale(1.1);
+}
+.headertitle{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 10px;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.langlist{
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(107, 75, 57);
+    border-color: rgb(67, 40, 24);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 50px;
+    left: 100px;
+    top: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+.lang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.lang:hover{
+    background-color: rgb(143, 118, 103);
+}
+.langimg{
+    height: 40px;
+}
+.langtext{
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
+}
+
+.otherButton{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-width: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 150px;
+    font-size: 25px;
+    color: white;
+    font-family: playfair;
+}
+.otherButton:hover{
+    background-color:rgb(87, 94, 68);
+    transform: scale(1.1);
+}
+.otherButton:hover .otherdropdown{
+    display:flex;
+}
+.otherdropdown{
+    display: none;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(107, 75, 57);
+    border-color: rgb(67, 40, 24);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 50px;
+    left: 655px;
+    top: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+
+.footerContainer{
+    background-color: rgb(47, 53, 30);
+    width: auto;
+    height: fit-content;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.footerTitle{
+    font-size: 20px;
+    font-style: italic;
+}
+.footerText{
+    font-size: 20px;
+}
+.footerLine{
+    width: 10px;
+    height: 100px;
+    background-color: rgb(87, 94, 68);
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.menuPage{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(67, 40, 24);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    transition: all 5s ease-in-out;
+    direction: ltr;
+}
+.buttonBox{
+    width: auto;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}
+.menuPageX{
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 80px;
+    margin: 20px;
+}
+.menuPageX:hover{
+    transform: scale(1.1);
+}
+.menuContainerOut{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.menuContainerIn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    direction: ltr;
+}
+.menuContent{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+a{
+    color: white;
+    font-size: 30px;
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 5px;
+}
+a:hover{
+    color: wheat;
+    transform: scale(1.1);
+}
+.menuLineh{
+    width: 200px;
+    height: 10px;
+    background-color:rgb(107, 75, 57) ;
+    border-radius: 20px;
+}
+.menuTitle{
+    font-size: 35px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 5px;
+}
+@keyframes toBottom{
+    from {top: -1000px;} 
+    to{top: 0px;} 
+}
+@keyframes toTop{
+    from {top: 0px;} 
+    to{top: -1000px;} 
+}
