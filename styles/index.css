@@ -84,3 +84,38 @@ h2{
     width: 100%;
     height: 80%;
 }
+
+@media (max-width: 1080px) {
+    body.mobile {
+        .start{
+            height: auto;
+            width: auto;
+            background-size:contain;
+        }
+        h1{
+            font-size: 120px;
+        }
+        h2{
+            font-size: 80px;
+        }
+        .pages{
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .page{
+            filter: grayscale(0%);
+            margin-bottom: 30px;
+            width: 80vw;
+        }
+        .pagetitle{
+            font-size: 80px;
+        }
+        .page:hover{
+            transform: none;
+        }
+        .pagebio{
+            font-size: 50px;
+        }
+    }
+}

@@ -214,3 +214,4 @@ function changeDir(ddir) {
       element.style.textAlign = ddir;
   });
 }
+

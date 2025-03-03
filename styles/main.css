@@ -283,11 +283,71 @@ a:hover{
     border-width: 1px;
     padding: 5px;
 }
-@keyframes toBottom{
-    from {top: -1000px;} 
-    to{top: 0px;} 
-}
-@keyframes toTop{
-    from {top: 0px;} 
-    to{top: -1000px;} 
+
+@media (max-width: 1080px) {
+    body.mobile {
+        .header{
+            height: 200px;
+        }
+        .logo{
+            height: 100px;
+        }
+        .headertitle{
+            font-size: 40px;
+        }
+        .menuButton{
+            height: 180px;
+        }
+        .langButton{
+            height: 180px;
+        }
+        .langlist{
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            top: 210px;
+        }
+        .langtext{
+            font-size: 60px;
+        }
+        .langimg{
+            height: 80px;
+        }
+        .footerTitle{
+            font-size: 40px;
+            width: 40vw;
+        }
+        .footerText{
+            font-size: 30px;
+            width: 40vw;
+        }
+        .footerLine{
+            width: 20px;
+            height: 200px;
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+        .menuPageX{
+            height: 150px;
+        }
+        .menuContainerIn{
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        .menuContent{
+            margin-bottom: 100px;
+        }
+        .menuTitle{
+            font-size: 120px;
+        }
+        a{
+            font-size: 60px;
+        }
+        .menuLineh{
+            width: 500px;
+            height: 20px;
+        }
+    }
 }

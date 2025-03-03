@@ -37,3 +37,12 @@ function openMenuPage(){
   menuPage.display = "none"
   body.backgroundColor = "rgb(250,232,182)"
 }
+
+function isMobile() {
+  return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  document.body.classList.add("mobile");
+}
+
