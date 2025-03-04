@@ -72,6 +72,7 @@ function langEng(){
   boxRight.style.direction = "rtl";
   buttonBox.style.direction = "rtl";
   menuContainerIn.style.direction = "ltr";
+  headerTitle.style.textAlign = "left";
   langlist.style.left = "100px";
   langlist.style.right = "0px";
   changeDir("left");
@@ -120,6 +121,7 @@ function langAr(){
   boxRight.style.direction = "ltr";
   buttonBox.style.direction = "ltr";
   menuContainerIn.style.direction = "rtl";
+  headerTitle.style.textAlign = "right";
   langlist.style.left = "0px";
   langlist.style.right = "100px";
   changeDir("right");
@@ -147,7 +149,10 @@ function langAr(){
 
   headerTitle.innerHTML = "هول إن 1 <br> منتجع الجولف";
   startTitle.innerHTML = "هول إن 1";
+  startTitle.style.fontSize = "65px";
   startText.innerHTML = "منتجع الجولف";
+  startText.style.fontSize = "40px";
+
 
   facilitiesTitle.innerHTML = "المرافق";
   facilitiesBio.innerHTML = "أنظر الى الفعاليات التي نقدمها";
@@ -168,6 +173,7 @@ function langPor(){
   boxRight.style.direction = "rtl";
   buttonBox.style.direction = "rtl";
   menuContainerIn.style.direction = "ltr";
+  headerTitle.style.textAlign = "left";
   langlist.style.left = "100px";
   langlist.style.right = "0px";
   changeDir("left");
@@ -194,6 +200,7 @@ function langPor(){
   details.innerHTML = "Detalhes de contato";
 
   headerTitle.innerHTML = "Buraco em 1 <br> Estância de golfe";
+  headerTitle.style.fontSize = "35px"
   startTitle.innerHTML = "Buraco em 1";
   startText.innerHTML = "Estância de golfe";
 

@@ -1,146 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Main Page</title>
-    <style>
-        *{
-            margin: 0px;
-        }
-        .header{
-            background-color: rgb(91, 145, 59);
-            width: auto;
-            height: 100px;
-            display: flex;
-            flex-direction: row;
-            position: sticky;
-            top: 0px;
-        }
-        .boxLeft{
-            background-color:rgba(222, 184, 135, 0);
-            width: 100vw;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            direction: ltr;
-        }
-        .boxMiddle{
-            background-color:rgba(222, 184, 135, 0);
-            width: 100vw;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            direction: ltr;
-            justify-content: center;
-            align-items: center; 
-        }
-        .boxRight{
-            background-color:rgba(222, 184, 135, 0);
-            width: 100vw;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-            direction: rtl;
-        }
-
-        .pageButton{
-            background-color: rgb(91, 145, 59);
-            border-color: rgba(240, 248, 255, 0);
-            border-bottom-color: black;
-            border-bottom-width: 5px;
-            cursor: pointer;
-            font-family: Arial black, sans-serif;
-            transition: transform 0.2s ease, background-color 0.2s ease-in-out;
-            margin-left: 2px;
-            margin-right: 2px;
-        }
-        .pageButton:hover{
-            background-color:rgb(119, 178, 84);
-            transform: scale(1.1);
-        }
-        .menu{
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out,;
-        }
-        .menu:hover{
-            transform: scale(1.1);
-        }
-        .headertitle{
-            text-align: left;
-            color: black;
-            font-family: Arial black, sans-serif;
-            -webkit-text-stroke-color: white;
-            -webkit-text-stroke-width: 0.2px;
-            font-size: 20px;
-            margin-left: 10px;
-            opacity: 0;
-            display: none;
-            transition: opacity 0.3s ease-in-out,display 0.3s ease-in-out;
-        }
-
-        .start{
-            background-image: url(../pics/golflol.jpg);
-            height: auto;
-            width: contain;
-            background-size: contain;
-            background-repeat: no-repeat;
-            aspect-ratio: 16 / 9;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            /*place-items: center;  توسيط أفقي وعمودي */
-            /*justify-content: center;  توسيط أفقي */
-            align-items: center; /* توسيط عمودي */
-        }
-        h1{
-            text-align: center;
-            font-family: Arial black, sans-serif;
-            font-size: 50px;
-            -webkit-text-stroke-color: white;
-            -webkit-text-stroke-width: 1px;
-        }
-        h2{
-            text-align: center;
-            font-family: Arial black, sans-serif;
-            font-size: 30px;
-            -webkit-text-stroke-color: white;
-            -webkit-text-stroke-width: 0.8px;
-        }
-
-    </style>
+    <title id="title">Hole in 1 | Facilities</title>
+    <link rel="icon" href="../pics/logo.png">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
 </head>
-<body>
-    <div class="header">
-        <div class="boxLeft">
-            <input class="menu" type="image" src="pics/menu.png" style="margin: 5px;"/>
-            <input class="menu" type="image" src="pics/lang.png" style="margin: 5px;"/>
+<body style="font-family: playfair;" id="body">
+    <div class="menuPage" id="menuPage">
+        <div class="buttonBox" id="buttonBox">
+            <input class="menuPageX" title="Close" type="image" src="../pics/buttons/x.png" alt="Close Button" onclick="closeMenuPage()"/>
         </div>
-        <div class="boxMiddle">
-            <img src="pics/logo.png" height="100vw">
-            <p class="headertitle">Hole in 1 <br> Golf Resort</p>
-        </div>
-
-        <div class="boxRight">
-            <button class="pageButton"style="margin-right: 5px;">Right Page1</button>
-            <button class="pageButton">Right Page2</button>
+        <div class="menuContainerOut">
+            <div class="menuContainerIn" id="menuContainerIn">
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'facilities.html';">Facilities</h2>
+                    <a id="golfcourts">Golf courts</a>
+                    <div class="menuLineh"></div>
+                    <a id="clubs">Clubs</a>
+                    <div class="menuLineh"></div>
+                    <a id="hotels">Hotels</a>
+                    <div class="menuLineh"></div>
+                    <a id="rac">Restaurants and cafes</a>
+                    <div class="menuLineh"></div>
+                    <a id="store">Professionals store</a>
+                    <div class="menuLineh"></div>
+                    <a id="otheractivities">Other activities</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'packages.html';">Packages</h2>
+                    <a id="fiverounds">Five rounds</a>
+                    <div class="menuLineh"></div>
+                    <a id="tripletee">Triple tee</a>
+                    <div class="menuLineh"></div>
+                    <a id="recreationbreak">Recreation break</a>
+                    <div class="menuLineh"></div>
+                    <a id="custompackages">Custom packages</a>
+                </div>
+                <div class="menuContent">
+                    <h2 class="menuTitle" id="menuContactus" onclick="window.location.href = 'contactus.html';">Contact us</h2>
+                    <a id="aboutus">About us</a>
+                    <div class="menuLineh"></div>
+                    <a id="why">Why choose us?</a>
+                    <div class="menuLineh"></div>
+                    <a id="details">Contact details</a>
+                </div>
+            </div>
         </div>
     </div>
+    <div style="display: block;" id="everything">
+        <div class="header">
+            <div class="boxLeft" id="boxLeft">
+                <input class="langButton" title="Choose Language" type="image" src="../pics/buttons/lang.png" onclick="langlistswitch()" alt="Language Button"/>
+                
+                <div class="langlist" id="langlist">
+                    <div class="lang" onclick="changelang('english');langEng()">
+                        <img src="../pics/lang/us.png" class="langimg">
+                        <p class="langtext">English</p>
+                    </div>
+                    <div class="lang" onclick="changelang('arabic');langAr()">
+                        <img src="../pics/lang/jo.png" class="langimg">
+                        <p class="langtext">العربية</p>
+                    </div>
+                    <div class="lang" onclick="changelang('port');langPor()">
+                        <img src="../pics/lang/port.png" class="langimg">
+                        <p class="langtext">Português</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="boxMiddle" id="boxMiddle">
+                <img class="logo" src="../pics/logo.png" height="100vw" alt="Logo" title="Go to Homepage" onclick="window.location.href = '../index.html';">
+                <p class="headertitle" id="headerTitle">Hole in 1 <br> Golf resort</p>
+            </div>
 
-    <div class="start">
-        <h1>Hole in 1</h1>
-        <h2>Golf Resort</h2>
+            <div class="boxRight" id="boxRight">
+                <input class="menuButton" title="Menu" type="image" src="../pics/buttons/menu.png" alt="Menu Button" onclick="openMenuPage()"/>
+            </div>
+        </div>
+
+        <div class="start">
+            <h1 id="startTitle">Facilities</h1>
+        </div>
+
+        <div class="footerContainer">
+            <div class="footerContent">
+                <h1 class="footerTitle" id="footerTitle">Designed and programmed by:</h1>
+                <h1 class="footerText" id="footerText">Ayham J.</h1>
+            </div>
+            <div class="footerLine"></div>
+            <div class="footerContent">
+                <h1 class="footerText" id="goal">This website was devolped and built to meet the requirments for passing the 'Websites Development' chapter in 11th grade, I.T. major.</h1>
+            </div>
+        </div>
     </div>
 </body>
-<script>
-    window.addEventListener("scroll", function () {
-  let hiddenText = document.querySelector(".headertitle");
-  if (window.scrollY > 100) { // يظهر بعد التمرير أكثر من 80px
-    hiddenText.style.opacity = "1";
-    hiddenText.style.display = "block";
-  } else {
-    hiddenText.style.opacity = "0";
-    hiddenText.style.display = "none";
-  }
-});
 
-</script>
+<script src="../js/main.js" defer></script>
+
 </html>
+<!--Made by Ayham Jaradat-->

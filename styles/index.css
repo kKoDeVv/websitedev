@@ -14,16 +14,17 @@
 }
 h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 65px;
     text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
     color: #ffff;
-
+    width: 100vw;
 }
 h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
     color: #ffff;
+    width: fit-content;
 }
 .pages{
     width: auto;
@@ -47,6 +48,7 @@ h2{
     margin-right: 20px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .page:hover{
     transform: scale(1.1);
@@ -59,7 +61,7 @@ h2{
     text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
     color: #ffff;
     width: auto;
-
+    user-select: none;
 }
 .pagebio{
     text-align: left;
@@ -69,20 +71,12 @@ h2{
     width: auto;
     margin-left: 5px;
     margin-right: 5px;
-
-}
-.pagebioArabic{
-    text-align: right;
-    font-size: 20px;
-    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
-    color: #ffff;
-    width: auto;
-    margin-left: 5px;
-    margin-right: 5px;
+    user-select: none;
 }
 .pageimg{
     width: 100%;
     height: 80%;
+    -webkit-user-drag: none;
 }
 
 @media (max-width: 1080px) {
@@ -91,12 +85,16 @@ h2{
             height: auto;
             width: auto;
             background-size:contain;
+            background-image: url(../pics/cover/startM.jpg);
+            aspect-ratio: 16 / 12;
         }
         h1{
-            font-size: 120px;
+            font-size: 150px;
+            width: 100%;
         }
         h2{
-            font-size: 80px;
+            font-size: 100px;
+            width: 100%;
         }
         .pages{
             flex-direction: column;

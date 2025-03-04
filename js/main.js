@@ -2,10 +2,11 @@ var lst = document.getElementById("langlist").style;
 var menuPage = document.getElementById("menuPage").style;
 var everything = document.getElementById("everything").style;
 var body = document.getElementById("body").style;
+var scrollToShow = 100
 
 window.addEventListener("scroll", function () {
     let hiddenText = document.querySelector(".headertitle");
-    if (window.scrollY > 100) {
+    if (window.scrollY > scrollToShow) {
       hiddenText.style.opacity = "1";
       hiddenText.style.display = "block";
     } else {
@@ -44,5 +45,6 @@ function isMobile() {
 
 if (isMobile()) {
   document.body.classList.add("mobile");
+  scrollToShow = 330
 }
 
