@@ -1,0 +1,179 @@
+*{margin: 0px;}
+.start{
+    background-image: url(../pics/cover/contactus/contactus.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4.5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: 100vw;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: fit-content;
+}
+
+.containerAboutus{
+    background-image: url(../pics/cover/contactus/contactus.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4.5;
+    display: flex;
+    flex-direction: column;
+}
+.cardRight{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.60);
+    position: relative;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerWhy{
+    background-image: url(../pics/cover/contactus/contactus.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4.5;
+    display: flex;
+    flex-direction: column;
+}
+.cardLeft{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.60);
+    position: relative;
+    margin-left: 5%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardTitle{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+}
+.cardText{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
+.contactBox{
+    background-color: rgb(67, 40, 24);
+    width: auto;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.or{
+    font-size: 30px;
+    color: rgb(165, 129, 110);
+}
+.line{
+    width: 20px;
+    height: 45%;
+    background-color: rgb(165, 129, 110);
+    border-radius: 20px;
+}
+.mid{
+    height: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.contactDetails{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.directContact{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.boxTitle{
+    color: white;
+}
+.detailsTitle{
+    color: white;
+}
+.detailsText{
+    color: white;
+}
+
+@media (max-width: 1080px) {
+    body.mobile {
+        .start{
+            height: auto;
+            width: auto;
+            background-size:contain;
+            background-image: url(../pics/cover/contactus/contactusM.jpg);
+            aspect-ratio: 16 / 12;
+        }
+        h1{
+            font-size: 100px;
+            width: 100%;
+        }
+        h2{
+            font-size: 65px;
+            width: 100%;
+        }
+        .containerAboutus{
+            aspect-ratio: 16/12;
+            background-image: url(../pics/cover/contactus/contactusM.jpg);
+        }
+        .cardRight{
+            height: 50%;
+            width: 60%;
+        }
+        .containerWhy{
+            aspect-ratio: 16/12;
+            background-image: url(../pics/cover/contactus/contactusM.jpg);
+        }
+        .cardLeft{
+            height: 50%;
+            width: 60%;
+        }
+        .cardTitle{
+            font-size: 60px;
+        }
+        .cardText{
+            font-size: 40px;
+        }
+    }
+}
