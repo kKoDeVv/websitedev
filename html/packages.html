@@ -4,6 +4,7 @@
     <title id="title">Hole in 1 | Packages</title>
     <link rel="icon" href="../pics/logo.png">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/facilities.css">
     <link rel="stylesheet" href="../styles/fonts.css">
 </head>
 <body style="font-family: playfair;" id="body">
@@ -15,17 +16,17 @@
             <div class="menuContainerIn" id="menuContainerIn">
                 <div class="menuContent">
                     <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'facilities.html';">Facilities</h2>
-                    <a id="golfcourts">Golf courts</a>
+                    <a id="golfcourts" href="#golfcourtsFacility" onclick="closeMenuPage()">Golf courts</a>
                     <div class="menuLineh"></div>
-                    <a id="clubs">Clubs</a>
+                    <a id="clubs" href="#gymsFacility" onclick="closeMenuPage()">Clubs</a>
                     <div class="menuLineh"></div>
-                    <a id="hotels">Hotels</a>
+                    <a id="hotels" href="#hotelsFacility" onclick="closeMenuPage()">Hotels</a>
                     <div class="menuLineh"></div>
-                    <a id="rac">Restaurants and cafes</a>
+                    <a id="rac" href="#racFacility" onclick="closeMenuPage()">Restaurants and cafes</a>
                     <div class="menuLineh"></div>
-                    <a id="store">Professionals store</a>
+                    <a id="store" href="#storeFacility" onclick="closeMenuPage()">Professionals store</a>
                     <div class="menuLineh"></div>
-                    <a id="otheractivities">Other activities</a>
+                    <a id="otheractivities" href="#otherFacility" onclick="closeMenuPage()">Other activities</a>
                 </div>
                 <div class="menuContent">
                     <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'packages.html';">Packages</h2>
@@ -71,7 +72,7 @@
             </div>
             <div class="boxMiddle" id="boxMiddle">
                 <img class="logo" src="../pics/logo.png" height="100vw" alt="Logo" title="Go to Homepage" onclick="window.location.href = '../index.html';">
-                <p class="headertitle" id="headerTitle">Hole in 1 <br> Golf resort</p>
+                <p class="headertitle" id="headerTitle">Hole in 1 <br> Facilities</p>
             </div>
 
             <div class="boxRight" id="boxRight">
@@ -81,6 +82,39 @@
 
         <div class="start">
             <h1 id="startTitle">Packages</h1>
+            <h2 id="startText">Our packages and offers</h2>
+        </div>
+
+        <div class="facilityContainerGolfcourts" id="golfcourtsFacility">
+            <div class="facilityCardRight">
+                <p class="facilityTitle" id="golfcourtsTitle">Five rounds</p>
+                <p class="facilityText" id="golfcourtsText">aaa</p>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+        </div>
+
+        <div class="facilityContainerGyms" id="gymsFacility">
+            <div class="facilityCardLeft">
+                <p class="facilityTitle" id="gymsTitle">Triple tee</p>
+                <p class="facilityText" id="gymsText">aaa</p>
+            </div>
+            <div class="facilityCardUnderLeft"></div>
+        </div>
+
+        <div class="facilityContainerHotels" id="hotelsFacility">
+            <div class="facilityCardRight">
+                <p class="facilityTitle" id="hotelsTitle">Recreation break</p>
+                <p class="facilityText" id="hotelsText">aaa</p>
+            </div>
+            <div class="facilityCardUnderRight"></div>
+        </div>
+
+        <div class="facilityContainerOther" id="otherFacility">
+            <p class="facilityTitle" id="otherTitle">Custom packages</p>
+            <p class="facilityText" id="otherText1">1-A training ground illuminated by scout lights.</p>
+            <p class="facilityText" id="otherText2">2-Golf lessons.</p>
+            <p class="facilityText" id="otherText3">3-Digital training.</p>
+            <p class="facilityText" id="otherText4">4-Assistance service for carrying golf equipment.</p>
         </div>
 
         <div class="footerContainer">
@@ -96,6 +130,7 @@
     </div>
 </body>
 
+<script src="../js/packages.js" defer></script>
 <script src="../js/main.js" defer></script>
 
 </html>

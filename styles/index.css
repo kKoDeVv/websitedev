@@ -8,16 +8,14 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    /*place-items: center;  توسيط أفقي وعمودي */
-    /*justify-content: center;  توسيط أفقي */
-    align-items: center; /* توسيط عمودي */
+    align-items: center;
 }
 h1{
     text-align: center;
     font-size: 65px;
     text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
     color: #ffff;
-    width: 100vw;
+    width: 100%;
 }
 h2{
     text-align: center;

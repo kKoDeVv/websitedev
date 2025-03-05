@@ -1,6 +1,6 @@
 *{margin: 0px;}
 .start{
-    background-image: url(../pics/cover/facilities/facilities.jpg);
+    background-image: url(../pics/cover/facilities/start.jpg);
     height: auto;
     width: contain;
     background-size: contain;
@@ -16,7 +16,7 @@ h1{
     font-size: 50px;
     text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
     color: #ffff;
-    width: 100vw;
+    width: 100%;
 }
 h2{
     text-align: center;
@@ -27,6 +27,16 @@ h2{
 }
 .facilityContainerGolfcourts{
     background-image: url(../pics/cover/facilities/golf.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerHotels{
+    background-image: url(../pics/cover/facilities/hotels.jpg);
     height: auto;
     width: contain;
     background-size: contain;
@@ -54,7 +64,7 @@ h2{
 }
 
 .facilityContainerGyms{
-    background-image: url(../pics/cover/start.jpg);
+    background-image: url(../pics/cover/facilities/gyms.jpg);
     height: auto;
     width: contain;
     background-size: contain;
@@ -62,6 +72,34 @@ h2{
     aspect-ratio: 16 / 4;
     display: flex;
     flex-direction: column;
+}
+.facilityContainerRac{
+    background-image: url(../pics/cover/facilities/restaurants.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerStore{
+    background-image: url(../pics/cover/facilities/store.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerOther{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .facilityCardLeft{
     width: 30%;
@@ -101,7 +139,7 @@ h2{
             height: auto;
             width: auto;
             background-size:contain;
-            background-image: url(../pics/cover/facilities/facilitiesM.jpg);
+            background-image: url(../pics/cover/facilities/startM.jpg);
             aspect-ratio: 16 / 12;
         }
         h1{
@@ -123,7 +161,19 @@ h2{
         }
         .facilityContainerGyms{
             aspect-ratio: 16/12;
-            background-image: url(../pics/cover/startM.jpg);
+            background-image: url(../pics/cover/facilities/gymsM.jpg);
+        }
+        .facilityContainerHotels{
+            aspect-ratio: 16/12;
+            background-image: url(../pics/cover/facilities/hotelsM.jpg);
+        }
+        .facilityContainerRac{
+            aspect-ratio: 16/12;
+            background-image: url(../pics/cover/facilities/restaurantsM.jpg);
+        }
+        .facilityContainerStore{
+            aspect-ratio: 16/12;
+            background-image: url(../pics/cover/facilities/storeM.jpg);
         }
         .facilityCardLeft{
             height: 50%;
@@ -135,6 +185,14 @@ h2{
         }
         .facilityText{
             font-size: 40px;
+            width: auto;
+        }
+        .facilityContainerOther .facilityTitle{
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        .facilityContainerOther .facilityText{
+            font-size: 20px;
         }
     }
 }

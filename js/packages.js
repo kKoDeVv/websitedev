@@ -86,7 +86,7 @@ function langEng(){
   langlist.style.right = "0px";
   changeDir("left");
 
-  document.title = "Hole in 1 | Facilities";
+  document.title = "Hole in 1 | Packages";
 
   menuFacilities.innerHTML = "Facilities";
   golfcourts.innerHTML = "Golf courts";
@@ -107,21 +107,17 @@ function langEng(){
   why.innerHTML = "Why choose us?";
   details.innerHTML = "Contact details";
 
-  headerTitle.innerHTML = "Hole in 1 <br> Facilities";
-  startTitle.innerHTML = "Facilities";
-  startText.innerHTML = "The places and activities in our resort";
+  headerTitle.innerHTML = "Hole in 1 <br> Packages";
+  startTitle.innerHTML = "Packages";
+  startText.innerHTML = "Our packages and offers";
 
-  golfcourtsTitle.innerHTML = "Golf courts"
-  golfcourtsText.innerHTML = "We have 3 courts for golf competitions, Including the very well-known 'Sea view' golf court!"
-  gymsTitle.innerHTML = "Gyms"
+  golfcourtsTitle.innerHTML = "Five rounds"
+  golfcourtsText.innerHTML = ""
+  gymsTitle.innerHTML = "Triple tee"
   gymsText.innerHTML = "We have 2 gyms with the newest and most recent equipments and machines"
-  hotelsTitle.innerHTML = "Hotels"
+  hotelsTitle.innerHTML = "Recreation break"
   hotelsText.innerHTML = "We offer you rooms in some of the best hotels in Portugal"
-  racTitle.innerHTML = "Restaurants and cafes"
-  racText.innerHTML = "Enjoy delicious food and drinks in our top notch restaurants and cafes"
-  storeTitle.innerHTML = "Store"
-  storeText.innerHTML = "Looking for somewhere to buy golf equipment? here it is"
-  otherTitle.innerHTML = "Other activities"
+  otherTitle.innerHTML = "Custom packages"
   otherText1.innerHTML = "1-A training ground illuminated by scout lights."
   otherText2.innerHTML = "2-Golf lessons."
   otherText3.innerHTML = "3-Digital training."
