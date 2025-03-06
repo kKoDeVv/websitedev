@@ -4,7 +4,7 @@
     <title id="title">Hole in 1 | Packages</title>
     <link rel="icon" href="../pics/logo.png">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/facilities.css">
+    <link rel="stylesheet" href="../styles/packages.css">
     <link rel="stylesheet" href="../styles/fonts.css">
 </head>
 <body style="font-family: playfair;" id="body">
@@ -15,36 +15,36 @@
         <div class="menuContainerOut">
             <div class="menuContainerIn" id="menuContainerIn">
                 <div class="menuContent">
-                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'facilities.html';">Facilities</h2>
-                    <a id="golfcourts" href="#golfcourtsFacility" onclick="closeMenuPage()">Golf courts</a>
+                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'html/facilities.html';">Facilities</h2>
+                    <a id="golfcourts" href="html/facilities.html#golfcourtsFacility">Golf courts</a>
                     <div class="menuLineh"></div>
-                    <a id="clubs" href="#gymsFacility" onclick="closeMenuPage()">Clubs</a>
+                    <a id="clubs" href="html/facilities.html#gymsFacility">Clubs</a>
                     <div class="menuLineh"></div>
-                    <a id="hotels" href="#hotelsFacility" onclick="closeMenuPage()">Hotels</a>
+                    <a id="hotels" href="html/facilities.html#hotelsFacility">Hotels</a>
                     <div class="menuLineh"></div>
-                    <a id="rac" href="#racFacility" onclick="closeMenuPage()">Restaurants and cafes</a>
+                    <a id="rac" href="html/facilities.html#racFacility">Restaurants and cafes</a>
                     <div class="menuLineh"></div>
-                    <a id="store" href="#storeFacility" onclick="closeMenuPage()">Professionals store</a>
+                    <a id="store" href="html/facilities.html#storeFacility">Professionals store</a>
                     <div class="menuLineh"></div>
-                    <a id="otheractivities" href="#otherFacility" onclick="closeMenuPage()">Other activities</a>
+                    <a id="otheractivities" href="html/facilities.html#otherFacility">Other activities</a>
                 </div>
                 <div class="menuContent">
                     <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'packages.html';">Packages</h2>
-                    <a id="fiverounds">Five rounds</a>
+                    <a id="fiverounds" href="#fiveroundsDiv" onclick="closeMenuPage()">Five rounds</a>
                     <div class="menuLineh"></div>
-                    <a id="tripletee">Triple tee</a>
+                    <a id="tripletee" href="#tripleteeDiv" onclick="closeMenuPage()">Triple tee</a>
                     <div class="menuLineh"></div>
-                    <a id="recreationbreak">Recreation break</a>
+                    <a id="recreationbreak" href="#recreationbreakDiv" onclick="closeMenuPage()">Recreation break</a>
                     <div class="menuLineh"></div>
-                    <a id="custompackages">Custom packages</a>
+                    <a id="custompackages" href="#custompackagesDiv" onclick="closeMenuPage()">Custom packages</a>
                 </div>
                 <div class="menuContent">
                     <h2 class="menuTitle" id="menuContactus" onclick="window.location.href = 'contactus.html';">Contact us</h2>
-                    <a id="aboutus">About us</a>
+                    <a id="aboutus" href="html/contactus.html#aboutusDiv">About us</a>
                     <div class="menuLineh"></div>
-                    <a id="why">Why choose us?</a>
+                    <a id="why" href="html/contactus.html#whyDiv">Why choose us?</a>
                     <div class="menuLineh"></div>
-                    <a id="details">Contact details</a>
+                    <a id="details" href="html/contactus.html#contactBox">Contact details</a>
                 </div>
             </div>
         </div>
@@ -85,36 +85,47 @@
             <h2 id="startText">Our packages and offers</h2>
         </div>
 
-        <div class="facilityContainerGolfcourts" id="golfcourtsFacility">
-            <div class="facilityCardRight">
+            <div class="facilityCardRight" id="fiveroundsDiv">
                 <p class="facilityTitle" id="golfcourtsTitle">Five rounds</p>
-                <p class="facilityText" id="golfcourtsText">aaa</p>
+                <p class="facilityText" id="golfcourtsText">
+                    ~Full accommodation for five nights in a luxury suite. <br>
+                    ~Five rounds 18 holes. <br>
+                    ~One guided tour at the famous 'Sea view' golf course. <br>
+                    ~Free digital training session.
+                </p>
+                <button onclick="book('Five rounds')" id="book1">Book</button>
             </div>
             <div class="facilityCardUnderRight"></div>
-        </div>
 
-        <div class="facilityContainerGyms" id="gymsFacility">
-            <div class="facilityCardLeft">
+            <div class="facilityCardLeft" id="tripleteeDiv">
                 <p class="facilityTitle" id="gymsTitle">Triple tee</p>
-                <p class="facilityText" id="gymsText">aaa</p>
+                <p class="facilityText" id="gymsText">
+                    ~Two-night stay in a double room with breakfast included. <br>
+                    ~Three rounds 18 holes, including one guided tour at the famous 'Sea view' golf course (if available).<br>
+                    ~Free gift for participants.<br>
+                    ~20% discount at the shop.
+                </p>
+                <button onclick="book('Triple tee')" id="book2">Book</button>
             </div>
             <div class="facilityCardUnderLeft"></div>
-        </div>
 
-        <div class="facilityContainerHotels" id="hotelsFacility">
-            <div class="facilityCardRight">
+            <div class="facilityCardRight" id="recreationbreakDiv">
                 <p class="facilityTitle" id="hotelsTitle">Recreation break</p>
-                <p class="facilityText" id="hotelsText">aaa</p>
+                <p class="facilityText" id="hotelsText">
+                    ~One-night stay with a full breakfast.<br>
+                    ~Dinner at any of the resorts restaurants.<br>
+                    ~Access to the pools (fees apply, and the 'Sea view' golf course is excluded).<br>
+                    ~Free club rental.
+                </p>
+                <button onclick="book('Recreation break')" id="book3">Book</button>
             </div>
             <div class="facilityCardUnderRight"></div>
-        </div>
 
-        <div class="facilityContainerOther" id="otherFacility">
+        <div class="facilityContainerOther" id="custompackagesDiv">
             <p class="facilityTitle" id="otherTitle">Custom packages</p>
-            <p class="facilityText" id="otherText1">1-A training ground illuminated by scout lights.</p>
-            <p class="facilityText" id="otherText2">2-Golf lessons.</p>
-            <p class="facilityText" id="otherText3">3-Digital training.</p>
-            <p class="facilityText" id="otherText4">4-Assistance service for carrying golf equipment.</p>
+            <p class="facilityText" id="otherText1">Custom packages are available for corporate events and extended stays.</p>
+            <p class="facilityText" id="otherText2">You have to contact us to arrange any custom packages.</p>
+            <a class="facilityText" id="otherText3" style="color: blue; text-decoration: underline;" href="contactus.html#contactBox">Click here to go to our contact details</a>
         </div>
 
         <div class="footerContainer">

@@ -15,36 +15,36 @@
         <div class="menuContainerOut">
             <div class="menuContainerIn" id="menuContainerIn">
                 <div class="menuContent">
-                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'facilities.html';">Facilities</h2>
-                    <a id="golfcourts">Golf courts</a>
+                    <h2 class="menuTitle" id="menuFacilities" onclick="window.location.href = 'html/facilities.html';">Facilities</h2>
+                    <a id="golfcourts" href="html/facilities.html#golfcourtsFacility">Golf courts</a>
                     <div class="menuLineh"></div>
-                    <a id="clubs">Clubs</a>
+                    <a id="clubs" href="html/facilities.html#gymsFacility">Clubs</a>
                     <div class="menuLineh"></div>
-                    <a id="hotels">Hotels</a>
+                    <a id="hotels" href="html/facilities.html#hotelsFacility">Hotels</a>
                     <div class="menuLineh"></div>
-                    <a id="rac">Restaurants and cafes</a>
+                    <a id="rac" href="html/facilities.html#racFacility">Restaurants and cafes</a>
                     <div class="menuLineh"></div>
-                    <a id="store">Professionals store</a>
+                    <a id="store" href="html/facilities.html#storeFacility">Professionals store</a>
                     <div class="menuLineh"></div>
-                    <a id="otheractivities">Other activities</a>
+                    <a id="otheractivities" href="html/facilities.html#otherFacility">Other activities</a>
                 </div>
                 <div class="menuContent">
                     <h2 class="menuTitle" id="menuPackages" onclick="window.location.href = 'packages.html';">Packages</h2>
-                    <a id="fiverounds">Five rounds</a>
+                    <a id="fiverounds" href="html/packages.html#fiveroundsDiv">Five rounds</a>
                     <div class="menuLineh"></div>
-                    <a id="tripletee">Triple tee</a>
+                    <a id="tripletee" href="html/packages.html#tripleteeDiv">Triple tee</a>
                     <div class="menuLineh"></div>
-                    <a id="recreationbreak">Recreation break</a>
+                    <a id="recreationbreak" href="html/packages.html#recreationbreakDiv">Recreation break</a>
                     <div class="menuLineh"></div>
-                    <a id="custompackages">Custom packages</a>
+                    <a id="custompackages" href="html/packages.html#custompackagesDiv">Custom packages</a>
                 </div>
                 <div class="menuContent">
                     <h2 class="menuTitle" id="menuContactus" onclick="window.location.href = 'contactus.html';">Contact us</h2>
-                    <a id="aboutus">About us</a>
+                    <a id="aboutus" href="#aboutusDiv" onclick="closeMenuPage()">About us</a>
                     <div class="menuLineh"></div>
-                    <a id="why">Why choose us?</a>
+                    <a id="why" href="#whyDiv" onclick="closeMenuPage()">Why choose us?</a>
                     <div class="menuLineh"></div>
-                    <a id="details">Contact details</a>
+                    <a id="details" href="#contactBox" onclick="closeMenuPage()">Contact details</a>
                 </div>
             </div>
         </div>
@@ -85,56 +85,60 @@
             <h2 id="startText">More details and information about us</h2>
         </div>
 
-        <div class="containerAboutus">
+        <div class="containerAboutus" id="aboutusDiv">
             <div class="cardRight">
-                <p class="cardTitle">About us</p>
-                <p class="cardText">We are a golf resort facility located in Portugal</p>
+                <p class="cardTitle" id="aboutusTitle">About us</p>
+                <p class="cardText" id="aboutusText">We are a golf resort facility located in Portugal</p>
             </div>
         </div>
 
-        <div class="containerWhy">
+        <div class="containerWhy" id="whyDiv">
             <div class="cardLeft">
-                <p class="cardTitle">Why choose us?</p>
-                <p class="cardText">We offer high quality facilities, Services, And activities, For decently low prices</p>
+                <p class="cardTitle" id="whyTitle">Why choose us?</p>
+                <p class="cardText" id="whyText">We offer high quality facilities, Services, And activities, For decently low prices</p>
             </div>
         </div>
 
-        <div class="contactBox">
-            <div class="contactDetails">
-                <p class="boxTitle">Our contact details</p>
+        <div class="contactBox" id="contactBox">
+            <div class="innerContact">
+                <p class="boxTitle" id="detailsTitle">Our contact details</p>
                 <div class="couple">
-                    <p class="detailsTitle">Phone number:</p>
+                    <p class="detailsTitle" id="numberTitle">Phone number:</p>
                     <p class="detailsText">+351-9-1234-5678</p>    
                 </div>
+                <div class="hLine"></div>
                 <div class="couple">
-                    <p class="detailsTitle">Email:</p>
-                    <p class="detailsText">holeinonecontact@gmai.com</p>    
+                    <p class="detailsTitle" id="emailTitle">Email:</p>
+                    <p class="detailsText">holeinonecontact@gmail.com</p>    
                 </div>
+                <div class="hLine"></div>
                 <div class="couple">
-                    <p class="detailsTitle">Facebook:</p>
+                    <p class="detailsTitle" id="facebookTitle">Facebook:</p>
                     <p class="detailsText">Hole in 1</p>    
                 </div>
             </div>
             <div class="mid">
                 <div class="line"></div>
-                <div class="or">OR</div>
+                <div class="or" id="orr">OR</div>
                 <div class="line"></div>    
             </div>
-            <div class="directContact">
-                <p class="boxTitle">Contact us directly</p>
+            <div class="innerContact">
+                <p class="boxTitle" id="sendTitle">Contact us directly</p>
                 <div class="couple">
-                    <p class="detailsTitle">First and last name:</p>
-                    <input type="text">
+                    <p class="detailsTitle" id="nameTitle">First and last name:</p>
+                    <input type="text" placeholder="Enter your name here" id="name" onclick="reset('name')">
                 </div>
+                <div class="hLine"></div>
                 <div class="couple">
-                    <p class="detailsTitle">Your Email:</p>
-                    <input type="email">
+                    <p class="detailsTitle" id="yourEmail">Your Email:</p>
+                    <input type="email" placeholder="Enter your email here" id="email" onclick="reset('email')">
                 </div>
+                <div class="hLine"></div>
                 <div class="couple">
-                    <p class="detailsTitle">Message:</p>
-                    <textarea>Write your message here.</textarea>
+                    <p class="detailsTitle" id="messageTitle">Message:</p>
+                    <textarea placeholder="Enter your message here" id="message" onclick="reset('message')"></textarea>
                 </div>
-                <button>Send</button>
+                <button onclick="send();" id="sendButton">Send</button>
             </div>
         </div>
         <div class="footerContainer">
@@ -150,6 +154,7 @@
     </div>
 </body>
 
+<script src="../js/contactus.js" defer></script>
 <script src="../js/main.js" defer></script>
 
 </html>

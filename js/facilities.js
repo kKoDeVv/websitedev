@@ -84,7 +84,6 @@ function langEng(){
   headerTitle.style.textAlign = "left";
   langlist.style.left = "100px";
   langlist.style.right = "0px";
-  changeDir("left");
 
   document.title = "Hole in 1 | Facilities";
 
@@ -142,7 +141,6 @@ function langAr(){
   headerTitle.style.textAlign = "right";
   langlist.style.left = "0px";
   langlist.style.right = "100px";
-  changeDir("right");
 
   document.title = "هول إن 1 | المرافق";
 
@@ -199,7 +197,6 @@ function langPor(){
   headerTitle.style.textAlign = "left";
   langlist.style.left = "100px";
   langlist.style.right = "0px";
-  changeDir("left");
 
   document.title = "Buraco em 1 | Instalações";
 
@@ -245,10 +242,4 @@ function langPor(){
   footerTitle.innerHTML = "Projetado e programado por:";
   footerText.innerHTML = "Ayham J.";
   goal.innerHTML = "Este site foi desenvolvido e construído para atender aos requisitos para aprovação no capítulo 'Desenvolvimento de Sites' no 11º ano, I.T. principal.";
-}
-
-function changeDir(ddir) {
-  document.querySelectorAll(".pagebio").forEach(element => {
-      element.style.textAlign = ddir;
-  });
 }

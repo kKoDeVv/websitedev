@@ -1,0 +1,213 @@
+*{margin: 0px;}
+.start{
+    background-image: url(../pics/cover/facilities/hotels.jpg);
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
+    color: #ffff;
+    width: fit-content;
+}
+.facilityContainerGolfcourts{
+    background-color: transparent;
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerHotels{
+    background-color: transparent;
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityCardRight{
+    width: 30%;
+    height: 75%;
+    background-color: beige;
+    position: relative;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 4.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.facilityCardUnderRight{
+    width: auto;
+    height: 100px;
+    background-color: beige;
+    direction: rtl;
+}
+
+.facilityContainerGyms{
+    background-color: beige;
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerRac{
+    background-color: wheat;
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerStore{
+    background-color: wheat;
+    height: auto;
+    width: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 16 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.facilityContainerOther{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.facilityCardLeft{
+    width: 30%;
+    height: 75%;
+    background-color: beige;
+    position: relative;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: 4.2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.facilityCardUnderLeft{
+    width: auto;
+    height: 100px;
+    background-color: beige;
+}
+.facilityTitle{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+}
+.facilityText{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+button{
+    font-size: 30px;
+    font-family: playfair;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: beige;
+}
+@media (max-width: 1080px) {
+    body.mobile {
+        .start{
+            background-image: url(../pics/cover/facilities/hotelsM.jpg);
+            height: auto;
+            width: auto;
+            background-size:contain;
+            aspect-ratio: 16 / 12;
+        }
+        h1{
+            font-size: 100px;
+            width: 100%;
+        }
+        h2{
+            font-size: 80px;
+            width: 100%;
+        }
+        .facilityContainerGolfcourts{
+            aspect-ratio: 16/12;
+        }
+        .facilityCardRight{
+            height: 50%;
+            width: 50%;
+            margin-top: 28%;
+        }
+        .facilityContainerGyms{
+            aspect-ratio: 16/12;
+        }
+        .facilityContainerHotels{
+            aspect-ratio: 16/12;
+        }
+        .facilityContainerRac{
+            aspect-ratio: 16/12;
+        }
+        .facilityContainerStore{
+            aspect-ratio: 16/12;
+        }
+        .facilityCardLeft{
+            height: 50%;
+            width: 50%;
+            margin-top: 28%;
+        }
+        .facilityTitle{
+            font-size: 60px;
+        }
+        .facilityText{
+            font-size: 40px;
+            width: auto;
+        }
+        .facilityContainerOther .facilityTitle{
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        .facilityContainerOther .facilityText{
+            font-size: 20px;
+        }
+    }
+}

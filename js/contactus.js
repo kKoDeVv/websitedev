@@ -1,3 +1,59 @@
+var nameInput = document.getElementById('name');
+var emailInput = document.getElementById('email');
+var messageInput = document.getElementById('message');
+
+function send(){
+  var name = nameInput.value;
+  var email = emailInput.value;
+  var message = messageInput.value;
+  c0 = true;
+
+  if (name == "" || name == "This field is required") {
+    nameInput.style.color = "red";
+    nameInput.value = "This field is required"
+    c0 = false;
+  }
+  if (email == "" || email == "This field is required"){
+    emailInput.style.color = "red";
+    emailInput.value = "This field is required"
+    c0 = false;
+  }
+  if (message == "" || message == "This field is required"){
+    messageInput.style.color = "red";
+    messageInput.value = "This field is required"
+    c0 = false;
+  }
+  if(c0){
+    alert("Message has been sent, thank you for contacting us!")
+  }
+  else{}
+}
+
+function reset(target){
+  if (target == "name") {
+    if (nameInput.style.color == "red") {
+      nameInput.style.color = "black";
+      nameInput.value = "";
+    }
+    else{}
+  }
+  else if (target == "email") {
+    if (emailInput.style.color == "red") {
+      emailInput.style.color = "black";
+      emailInput.value = "";
+    }
+    else{}
+  }
+  else if (target == "message") {
+    if (messageInput.style.color == "red") {
+      messageInput.style.color = "black";
+      messageInput.value = "";
+    }
+    else{}
+  }
+  else{}
+}
+
 function getCookie(name) {
   let cookies = document.cookie.split('; ');
   for (let cookie of cookies) {
@@ -41,27 +97,27 @@ var headerTitle = document.getElementById('headerTitle');
 var startTitle = document.getElementById('startTitle');
 var startText = document.getElementById('startText');
 
-var golfcourtsTitle = document.getElementById('golfcourtsTitle')
-var golfcourtsText = document.getElementById('golfcourtsText')
-var gymsTitle = document.getElementById('gymsTitle')
-var gymsText = document.getElementById('gymsText')
-var hotelsTitle = document.getElementById('hotelsTitle')
-var hotelsText = document.getElementById('hotelsText')
-var racTitle = document.getElementById('racTitle')
-var racText = document.getElementById('racText')
-var storeTitle = document.getElementById('storeTitle')
-var storeText = document.getElementById('storeText')
-var otherTitle = document.getElementById('otherTitle')
-var otherText1 = document.getElementById('otherText1')
-var otherText2 = document.getElementById('otherText2')
-var otherText3 = document.getElementById('otherText3')
-var book1 = document.getElementById('book1')
-var book2 = document.getElementById('book2')
-var book3 = document.getElementById('book3')
-
 var footerTitle = document.getElementById('footerTitle');
 var footerText = document.getElementById('footerText');
 var goal = document.getElementById('goal');
+
+
+var aboutusTitle = document.getElementById('aboutusTitle');
+var aboutusText = document.getElementById('aboutusText');
+var whyTitle = document.getElementById('whyTitle');
+var whyText = document.getElementById('whyText');
+var detailsTitle = document.getElementById('detailsTitle');
+var numberTitle = document.getElementById('numberTitle');
+var emailTitle = document.getElementById('emailTitle');
+var facebookTitle = document.getElementById('facebookTitle');
+var orr = document.getElementById('orr');
+var sendTitle = document.getElementById('sendTitle');
+var nameTitle = document.getElementById('nameTitle');
+var yourEmail = document.getElementById('yourEmail');
+var messageTitle = document.getElementById('messageTitle');
+var sendButton = document.getElementById('sendButton');
+
+
 
 if (getCookie("lang") == "english") {
   langEng()
@@ -87,7 +143,7 @@ function langEng(){
   langlist.style.left = "100px";
   langlist.style.right = "0px";
 
-  document.title = "Hole in 1 | Packages";
+  document.title = "Hole in 1 | Contact us";
 
   menuFacilities.innerHTML = "Facilities";
   golfcourts.innerHTML = "Golf courts";
@@ -108,27 +164,29 @@ function langEng(){
   why.innerHTML = "Why choose us?";
   details.innerHTML = "Contact details";
 
-  headerTitle.innerHTML = "Hole in 1 <br> Packages";
-  startTitle.innerHTML = "Packages";
-  startText.innerHTML = "Our packages and offers";
-
-  golfcourtsTitle.innerHTML = "Five rounds"
-  golfcourtsText.innerHTML = "~Full accommodation for five nights in a luxury suite. <br>~Five rounds 18 holes. <br>~One guided tour at the famous 'Sea view' golf course. <br>~Free digital training session."
-  gymsTitle.innerHTML = "Triple tee"
-  gymsText.innerHTML = "~Two-night stay in a double room with breakfast included. <br>~Three rounds 18 holes, including one guided tour at the famous 'Sea view' golf course (if available).<br>~Free gift for participants.<br>~20% discount at the shop."
-  hotelsTitle.innerHTML = "Recreation break"
-  hotelsText.innerHTML = "~One-night stay with a full breakfast.<br>~Dinner at any of the resorts restaurants.<br>~Access to the pools (fees apply, and the 'Sea view' golf course is excluded).<br>~Free club rental."
-  otherTitle.innerHTML = "Custom packages"
-  otherText1.innerHTML = "Custom packages are available for corporate events and extended stays."
-  otherText2.innerHTML = "You have to contact us to arrange any custom packages."
-  otherText3.innerHTML = "Click here to go to our contact details"
-  book1.innerHTML = "Book"
-  book2.innerHTML = "Book"
-  book3.innerHTML = "Book"
+  headerTitle.innerHTML = "Hole in 1 <br> Contact us";
+  startTitle.innerHTML = "Contact us";
+  startText.innerHTML = "More details and information about us";
 
   footerTitle.innerHTML = "Designed and programmed by:";
   footerText.innerHTML = "Ayham J.";
   goal.innerHTML = "This website was developed and built to meet the requirements for passing the 'Websites Development' chapter in 11th grade, I.T. major.";
+
+  aboutusTitle.innerHTML = "About us";
+  aboutusText.innerHTML = "We are a golf resort facility located in Portugal";
+  whyTitle.innerHTML = "Why choose us?";
+  whyText.innerHTML = "We offer high quality facilities, Services, And activities, For decently low prices";
+  detailsTitle.innerHTML = "Our contact details";
+  numberTitle.innerHTML = "Phone number:";
+  emailTitle.innerHTML = "Email:";
+  facebookTitle.innerHTML = "Facebook:" ;
+  orr.innerHTML = "OR";
+  sendTitle.innerHTML = "Contact us directly";
+  nameTitle.innerHTML = "First and last name:";
+  yourEmail.innerHTML = "Your Email:";
+  messageTitle.innerHTML = "Message:";
+  sendButton.innerHTML = "Send";
+
 }
 
 function langAr(){
@@ -142,7 +200,7 @@ function langAr(){
   langlist.style.left = "0px";
   langlist.style.right = "100px";
 
-  document.title = "هول إن 1 | الحزم";
+  document.title = "هول إن 1 | تواصل معنا";
 
   menuFacilities.innerHTML = "المرافق";
   golfcourts.innerHTML = "ملاعب الجولف";
@@ -163,27 +221,29 @@ function langAr(){
   why.innerHTML = "لماذا يجب عليك اختيارنا؟";
   details.innerHTML = "بيانات التواصل";
 
-  headerTitle.innerHTML = "هول إن 1 <br> الحزم";
-  startTitle.innerHTML = "الحزم";
-  startText.innerHTML = "حزمنا وعروضنا";
-
-  golfcourtsTitle.innerHTML = "خمس جولات"
-  golfcourtsText.innerHTML = "~إقامة كاملة لمدة خمس ليال في جناح فاخر. <br>~خمس جولات 18 حفرة. <br>~جولة إرشادية واحدة في ملعب الجولف الشهير 'سي فيو'. <br>~جلسة تدريبية رقمية مجانية."
-  gymsTitle.innerHTML = "الجولة الثلاثية"
-  gymsText.innerHTML = "~إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة الإفطار. <br>~ثلاث جولات من 18 حفرة، بما في ذلك جولة إرشادية في ملعب الجولف الشهير 'سي فيو' (إن وجد).<br>~هدية مجانية للمشاركين.<br>~خصم 20% في المتجر."
-  hotelsTitle.innerHTML = "إستراحة استجمام"
-  hotelsText.innerHTML = "~إقامة لليلة واحدة مع وجبة إفطار كاملة.<br>~العشاء في أي من مطاعم المنتجع.<br>~الدخول إلى حمامات السباحة (تطبق الرسوم، ولا يشمل ملعب الجولف 'سي فيو').<br>~استئجار النادي مجانًا."
-  otherTitle.innerHTML = "تتوفر الحزم المخصصة للفعاليات المؤسسية والإقامات الطويلة."
-  otherText1.innerHTML = "الحزم المخصصة"
-  otherText2.innerHTML = "يجب عليك التواصل معنا لترتيب أي حزم مخصصة."
-  otherText3.innerHTML = "إضغط هنا للذهاب الى صفحة التواصل"
-  book1.innerHTML = "إحجز"
-  book2.innerHTML = "أحجز"
-  book3.innerHTML = "أحجز"
+  headerTitle.innerHTML = "هول إن 1 <br> تواصل معنا";
+  startTitle.innerHTML = "تواصل معنا";
+  startText.innerHTML = "المزيد من التفاصيل والمعلومات عننا";
 
   footerTitle.innerHTML = "تم التصميم والبرمجة بواسطة:";
   footerText.innerHTML = "أيهم ج.";
   goal.innerHTML = "تم تطوير وبناء هذا الموقع الالكتروني لتلبية المتطلبات للنجاح في وحدة 'تطوير المواقع الالكترونية' في الصف الحادي عشر (أول ثانوي)، تخصص تكنولوجيا المعلومات.";
+
+  aboutusTitle.innerHTML = "المزيد عننا";
+  aboutusText.innerHTML = "نحن شركة منتجع جولف موجودة في البرتغال";
+  whyTitle.innerHTML = "لماذا يجب عليك اختيارنا؟";
+  whyText.innerHTML = "نحن نقدم مرافق، خدمات، وفعاليات عالية الجودة بسعر زهيد";
+  detailsTitle.innerHTML = "معلومات الاتصال بنا";
+  numberTitle.innerHTML = "رقم الهاتف:";
+  emailTitle.innerHTML = "البريد الالكتروني:";
+  facebookTitle.innerHTML = "فيسبوك:";
+  orr.innerHTML = "أو";
+  sendTitle.innerHTML = "تواصل معنا مباشرة";
+  nameTitle.innerHTML = "الاسم الأول والاخير:";
+  yourEmail.innerHTML = "بريدك الالكتروني:";
+  messageTitle.innerHTML = "الرسالة:";
+  sendButton.innerHTML = "إرسال";
+
 }
 function langPor(){
   document.body.dir = "ltr";
@@ -196,7 +256,7 @@ function langPor(){
   langlist.style.left = "100px";
   langlist.style.right = "0px";
 
-  document.title = "Buraco em 1 | Pacotes";
+  document.title = "Buraco em 1 | Contate-nos";
 
   menuFacilities.innerHTML = "Instalações";
   golfcourts.innerHTML = "Campos de golfe";
@@ -217,31 +277,27 @@ function langPor(){
   why.innerHTML = "Por que nos escolher?";
   details.innerHTML = "Detalhes de contato";
 
-  headerTitle.innerHTML = "Buraco em 1 <br> Pacotes";
-  startTitle.innerHTML = "Pacotes";
-  startText.innerHTML = "Nossos pacotes e ofertas";
-
-  golfcourtsTitle.innerHTML = "Cinco rodadas"
-  golfcourtsText.innerHTML = "~Acomodação completa por cinco noites em suíte luxo. <br>~Cinco rodadas de 18 buracos. <br>~Uma visita guiada ao famoso campo de golfe 'Vista para o mar'. <br>~Sessão de treinamento digital gratuita."
-  gymsTitle.innerHTML = "Camiseta tripla"
-  gymsText.innerHTML = "~Duas noites de alojamento em quarto duplo com pequeno almoço incluído. <br>~Três voltas de 18 buracos, incluindo uma visita guiada ao famoso campo de golfe 'Vista para o mar' (se disponível).<br>~Presente gratuito para os participantes.<br>~20% de desconto na loja."
-  hotelsTitle.innerHTML = "Pausa recreativa"
-  hotelsText.innerHTML = "~Estadia de uma noite com pequeno-almoço completo.<br>~Jantar em qualquer um dos restaurantes do resort.<br>~Acesso às piscinas (taxa extra e o campo de golfe 'Vista Mar' está excluído).<br>~Aluguer gratuito do clube."
-  otherTitle.innerHTML = "Pacotes personalizados"
-  otherText1.innerHTML = "Pacotes personalizados estão disponíveis para eventos corporativos e estadias prolongadas."
-  otherText2.innerHTML = "Você deve entrar em contato conosco para organizar quaisquer pacotes personalizados."
-  otherText3.innerHTML = "Clique aqui para acessar nossos dados de contato"
-  book1.innerHTML = "Reserve"
-  book2.innerHTML = "Reserve"
-  book3.innerHTML = "Reserve"
+  headerTitle.innerHTML = "Buraco em 1 <br> Contate-nos";
+  startTitle.innerHTML = "Contate-nos";
+  startText.innerHTML = "Mais detalhes e informações sobre nós";
 
   footerTitle.innerHTML = "Projetado e programado por:";
   footerText.innerHTML = "Ayham J.";
   goal.innerHTML = "Este site foi desenvolvido e construído para atender aos requisitos para aprovação no capítulo 'Desenvolvimento de Sites' no 11º ano, I.T. principal.";
-}
 
-function book(target) {
-  var name = prompt("Your name: ", "");
-  var name = prompt("Your email: ", "");
-  alert(target + ' has been booked!');
+  aboutusTitle.innerHTML = "Sobre nós";
+  aboutusText.innerHTML = "Somos um resort de golfe localizado em Portugal";
+  whyTitle.innerHTML = "Por que nos escolher?";
+  whyText.innerHTML = "Oferecemos instalações, serviços e atividades de alta qualidade, por preços decentemente baixos";
+  detailsTitle.innerHTML = "Nossos dados de contato";
+  numberTitle.innerHTML = "Número de telefone:";
+  emailTitle.innerHTML = "E-mail:";
+  facebookTitle.innerHTML = "Facebook:" ;
+  orr.innerHTML = "OU";
+  sendTitle.innerHTML = "Contate-nos diretamente";
+  nameTitle.innerHTML = "Nome e sobrenome:";
+  yourEmail.innerHTML = "Seu e-mail:";
+  messageTitle.innerHTML = "Mensagem:";
+  sendButton.innerHTML = "Enviar";
+
 }

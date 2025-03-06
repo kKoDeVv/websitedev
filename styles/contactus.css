@@ -16,7 +16,7 @@ h1{
     font-size: 50px;
     text-shadow:0 1px 1px #000, 0 -1px 1px #000, 1px 0 1px #000, -1px 0 1px #000;
     color: #ffff;
-    width: 100vw;
+    width: 100%;
 }
 h2{
     text-align: center;
@@ -38,7 +38,7 @@ h2{
 }
 .cardRight{
     width: 30%;
-    height: 100%;
+    height: 98.2%;
     background-color: rgba(255, 255, 255, 0.60);
     position: relative;
     margin-left: auto;
@@ -60,7 +60,7 @@ h2{
 }
 .cardLeft{
     width: 30%;
-    height: 100%;
+    height: 98.2%;
     background-color: rgba(255, 255, 255, 0.60);
     position: relative;
     margin-left: 5%;
@@ -92,10 +92,12 @@ h2{
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 .or{
     font-size: 30px;
     color: rgb(165, 129, 110);
+    user-select: none;
 }
 .line{
     width: 20px;
@@ -111,31 +113,80 @@ h2{
     justify-content: center;
     align-items: center
 }
-.contactDetails{
+.innerContact{
     width: 49%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.directContact{
-    width: 49%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 .boxTitle{
-    color: white;
+    color: wheat;
+    font-size: 50px;
+    margin-bottom: 20px;
+    user-select: none;
+    text-align: center;
 }
 .detailsTitle{
     color: white;
+    font-size: 30px;
+    text-align: center;
+    user-select: none;
 }
 .detailsText{
     color: white;
+    font-size: 20px;
+    text-align: center;
 }
-
+.hLine{
+    height: 1px;
+    width: 60%;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.couple{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    font-size: 20px;
+    font-family: playfair;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    border-color: wheat;
+    text-align: center;
+}
+textarea{
+    font-size: 20px;
+    font-family: playfair;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    border-color: wheat;
+    max-width: 400px;
+    max-height: 500px;
+    text-align: center;
+}
+button{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: playfair;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: wheat;
+}
 @media (max-width: 1080px) {
     body.mobile {
         .start{
@@ -174,6 +225,67 @@ h2{
         }
         .cardText{
             font-size: 40px;
+        }
+        .contactBox{
+            flex-direction: column;
+            align-items: center;
+        }
+        .mid{
+            height: fit-content;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerContact{
+            width: auto;
+        }
+        .boxTitle{
+            font-size: 100px;
+        }
+        .detailsTitle{
+            font-size: 80px;
+        }
+        .detailsText{
+            font-size: 60px;
+        }
+        .hLine{
+            height: 5px;
+            width: 85%;
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            font-size: 50px;
+        }
+        textarea{
+            font-size: 50px;
+            max-width: 600px;
+            width: 600px;
+        }
+        button{
+            font-size: 80px;
+            margin-top: 50px;
+            transition: all 0.1s ease-in-out;
+        }
+        button:hover{
+            transform: scale(1.1);
+            background-color: wheat;
+        }
+        .or{
+            font-size: 80px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .line{
+            width: 300px;
+            height: 20px;
+            background-color: rgb(165, 129, 110);
+            border-radius: 20px;
         }
     }
 }
