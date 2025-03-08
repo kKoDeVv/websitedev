@@ -2,58 +2,6 @@ var nameInput = document.getElementById('name');
 var emailInput = document.getElementById('email');
 var messageInput = document.getElementById('message');
 
-function send(){
-  var name = nameInput.value;
-  var email = emailInput.value;
-  var message = messageInput.value;
-  c0 = true;
-
-  if (name == "" || name == "This field is required") {
-    nameInput.style.color = "red";
-    nameInput.value = "This field is required"
-    c0 = false;
-  }
-  if (email == "" || email == "This field is required"){
-    emailInput.style.color = "red";
-    emailInput.value = "This field is required"
-    c0 = false;
-  }
-  if (message == "" || message == "This field is required"){
-    messageInput.style.color = "red";
-    messageInput.value = "This field is required"
-    c0 = false;
-  }
-  if(c0){
-    alert("Message has been sent, thank you for contacting us!")
-  }
-  else{}
-}
-
-function reset(target){
-  if (target == "name") {
-    if (nameInput.style.color == "red") {
-      nameInput.style.color = "black";
-      nameInput.value = "";
-    }
-    else{}
-  }
-  else if (target == "email") {
-    if (emailInput.style.color == "red") {
-      emailInput.style.color = "black";
-      emailInput.value = "";
-    }
-    else{}
-  }
-  else if (target == "message") {
-    if (messageInput.style.color == "red") {
-      messageInput.style.color = "black";
-      messageInput.value = "";
-    }
-    else{}
-  }
-  else{}
-}
-
 function getCookie(name) {
   let cookies = document.cookie.split('; ');
   for (let cookie of cookies) {
@@ -117,7 +65,7 @@ var yourEmail = document.getElementById('yourEmail');
 var messageTitle = document.getElementById('messageTitle');
 var sendButton = document.getElementById('sendButton');
 
-
+var sentMessage = "Message has been sent, thank you for contacting us!";
 
 if (getCookie("lang") == "english") {
   langEng()
@@ -187,6 +135,7 @@ function langEng(){
   messageTitle.innerHTML = "Message:";
   sendButton.innerHTML = "Send";
 
+  sentMessage = "Message has been sent, thank you for contacting us!";
 }
 
 function langAr(){
@@ -244,6 +193,7 @@ function langAr(){
   messageTitle.innerHTML = "الرسالة:";
   sendButton.innerHTML = "إرسال";
 
+  sentMessage = "تم إرسال رسالتك، شكرا لك على التواصل معنا!";
 }
 function langPor(){
   document.body.dir = "ltr";
@@ -300,4 +250,57 @@ function langPor(){
   messageTitle.innerHTML = "Mensagem:";
   sendButton.innerHTML = "Enviar";
 
+  sentMessage = "A mensagem foi enviada, obrigado por entrar em contato conosco!";
+}
+
+function send(){
+  var name = nameInput.value;
+  var email = emailInput.value;
+  var message = messageInput.value;
+  c0 = true;
+
+  if (name == "" || name == "This field is required") {
+    nameInput.style.color = "red";
+    nameInput.value = "This field is required"
+    c0 = false;
+  }
+  if (email == "" || email == "This field is required"){
+    emailInput.style.color = "red";
+    emailInput.value = "This field is required"
+    c0 = false;
+  }
+  if (message == "" || message == "This field is required"){
+    messageInput.style.color = "red";
+    messageInput.value = "This field is required"
+    c0 = false;
+  }
+  if(c0){
+    alert(sentMessage);
+  }
+  else{}
+}
+
+function reset(target){
+  if (target == "name") {
+    if (nameInput.style.color == "red") {
+      nameInput.style.color = "black";
+      nameInput.value = "";
+    }
+    else{}
+  }
+  else if (target == "email") {
+    if (emailInput.style.color == "red") {
+      emailInput.style.color = "black";
+      emailInput.value = "";
+    }
+    else{}
+  }
+  else if (target == "message") {
+    if (messageInput.style.color == "red") {
+      messageInput.style.color = "black";
+      messageInput.value = "";
+    }
+    else{}
+  }
+  else{}
 }

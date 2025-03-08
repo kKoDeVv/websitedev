@@ -8,6 +8,12 @@ function getCookie(name) {
   }
   return "english";
 }
+var namePormpt = "Your name: ";
+var emailPrompt = "Your email: ";
+var beenBooked = " has been booked!";
+var fr = "Five rounds";
+var tt = "Triple tee";
+var rb = "Recreation break";
 
 var body = document.getElementById('body');
 var boxLeft = document.getElementById('boxLeft');
@@ -129,6 +135,13 @@ function langEng(){
   footerTitle.innerHTML = "Designed and programmed by:";
   footerText.innerHTML = "Ayham J.";
   goal.innerHTML = "This website was developed and built to meet the requirements for passing the 'Websites Development' chapter in 11th grade, I.T. major.";
+
+  namePormpt = "Your name: ";
+  emailPrompt = "Your email: ";
+  beenBooked = " has been booked!";
+  fr = "Five rounds";
+  tt = "Triple tee";
+  rb = "Recreation break";
 }
 
 function langAr(){
@@ -184,6 +197,13 @@ function langAr(){
   footerTitle.innerHTML = "تم التصميم والبرمجة بواسطة:";
   footerText.innerHTML = "أيهم ج.";
   goal.innerHTML = "تم تطوير وبناء هذا الموقع الالكتروني لتلبية المتطلبات للنجاح في وحدة 'تطوير المواقع الالكترونية' في الصف الحادي عشر (أول ثانوي)، تخصص تكنولوجيا المعلومات.";
+
+  namePormpt = "أدخل اسمك: ";
+  emailPrompt = "أدخل عنوان بريدك الالكتروني: ";
+  beenBooked = " تم حجزها بنجاح!";
+  fr = "خمس جولات";
+  tt = "الجولة الثلاثية";
+  rb = "إستراحة استجمام";
 }
 function langPor(){
   document.body.dir = "ltr";
@@ -238,10 +258,27 @@ function langPor(){
   footerTitle.innerHTML = "Projetado e programado por:";
   footerText.innerHTML = "Ayham J.";
   goal.innerHTML = "Este site foi desenvolvido e construído para atender aos requisitos para aprovação no capítulo 'Desenvolvimento de Sites' no 11º ano, I.T. principal.";
+
+  namePormpt = "Seu nome: ";
+  emailPrompt = "Seu e-mail: ";
+  beenBooked = " foi reservado!";
+  fr = "Cinco rodadas";
+  tt = "Camiseta tripla";
+  rb = "Pausa recreativa";
 }
 
 function book(target) {
-  var name = prompt("Your name: ", "");
-  var name = prompt("Your email: ", "");
-  alert(target + ' has been booked!');
+  var name = prompt(namePormpt, "");
+  var name = prompt(emailPrompt, "");
+
+  if (target == "Five rounds") {
+    alert(fr + beenBooked);
+  }
+  else if (target == "Triple tee") {
+    alert(tt + beenBooked);
+  }
+  else if (target == "Recreation break") {
+    alert(rb + beenBooked);
+  }
+  else{}
 }

@@ -26,7 +26,7 @@ function langlistswitch(){
 }
 function changelang(lang){
   lst.display = "none";
-  document.cookie = "lang=" + lang + "; expires=Tue, 19 Jan 2038 04:14:07 GMT; path=/";
+  document.cookie = "lang=" + lang + "; expires=Tue, 19 Jan 2038 04:14:07 GMT";
 }
 
 function openMenuPage(){
